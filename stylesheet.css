@@ -60,7 +60,7 @@ nav{
   transition: 1s ease-out;
 }
 .botones:hover{
-  background-color: #C2393D;
+  background-color: #D63035;
   transition: 0.3s ease;
 }
 /*
@@ -127,7 +127,7 @@ nav{
   padding: 25px 5px 25px 5px;
 }
 .botonestitulo:hover{
-  background-color: #C2393D;
+  background-color: #D63035;
   transition: 0.6s ease;
 }
 .card_servicios{
@@ -161,6 +161,11 @@ nav{
   grid-auto-rows: 2fr 1fr;
   transition: 0.5s ease;
 }
+  .card:hover{
+  background: #fff;
+	box-shadow: 0px 0px 10px #555;
+  transition: 0.5s ease;
+}
   .card img{
     height: 100%;
     width: 100%;
@@ -171,10 +176,6 @@ nav{
     text-align: center;
     text-decoration: none;
     color: #3D3D3D;
-    transition: 0.5s ease;
-  }
-  .card a:hover{
-    background-color: #fff;
     transition: 0.5s ease;
   }
 @media only screen and (max-width:1320px) {
@@ -195,6 +196,7 @@ nav{
     display: block;
   }
   .card{
+    width: 100%;
     margin: 40px auto 40px auto;
   }
 }
@@ -202,7 +204,7 @@ nav{
 .contact_section{
   height: 450px;
   padding: 30px;
-  background: #C7262B;
+  background: #D63035;
 }
   .contact_section h2{
     color: #F0F0F0;
@@ -220,16 +222,31 @@ nav{
 .map{
   grid-row: 1/3;
 }
+
+
+
+/*NUEVO*/
+
+
+
+
 .contact_info{
-  background-color: #C2393D;
+  background-color: #E3363B;
+  border-radius: 5px;
+  color: #FFFFFF;
+  padding: 0 25px;
 }
+
+
+
+
 footer{
   width: 100%;
   padding: 50px 0 50px 0;
   background: #E0E0E0
 }
 .wrapper_footer{
-  width: 600px;
+  width: 700px;
   height: 150px;
   margin-left: auto;
   margin-right: auto;
@@ -238,6 +255,7 @@ footer{
 }
 .logo_footer{
   height: 125px;
+  padding-bottom: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -255,19 +273,22 @@ footer{
   height: 25px;
   display: inline;
 }
-@media only screen and (max-width:620px){
+@media only screen and (max-width:800px){
 /*  footer{
     padding: 50px;
   }*/
   .wrapper_footer{
     width: 100%;
-    height: 100%;
+    height: 90%;
   }
   .wrapper_footer div{
-    float: left;
+    text-align: center;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
   }
+}
+@media only screen and (max-width: 510px) {
+    .logo_footer{
+      width: 100%;
+      height: auto;
+    }
 }
