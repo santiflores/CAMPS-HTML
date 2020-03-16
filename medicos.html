@@ -13,117 +13,131 @@
     <script>
     </script>
     <header class="menu">
-      <img src="fotos/logo_CAMPS.png" alt="" class="logoheader">
+      <a href="index.html">
+        <img src="fotos/logo_camps.png" alt="CAMPS" class="logoheader">
+      </a>
       <nav>
         <ul>
-          <li><a href="" class="botones">RESERVE  SU TURNO</a></li>
-          <li><a href="" class="botones">CONTACANOS</a></li>
+          <li><a href="sobre_nosotros.html">Quienes somos</a></li>
+          <li><a href="medicos.html" class="botones">RESERVE SU TURNO</a></li>
+          <li><a href="sobre_nosotros.html" class="botones">CONTACANOS</a></li>
         </ul>
+      </nav>
     </header>
+    <div class="wrapper_turno">
+      <div class="wrapper_formulario">
+        <form class="" action="<?php echo htmlspecialchars ($_SERVER['PHP_SELF']); ?>" method="post">
+          <input type="text" name="nombre" placeholder="Nombre" value="">
+          <input type="text" name="Apellido" placeholder="Apellido" value=""><br>
+
+          <input type="text" name="dni" placeholder="DNI" value=""><br>
+
+          <input type="text" name="telefono" placeholder="Telefono" value=""><br>
+
+          <input type="date" name="fecha_de_nacimiento" value=""><br>
+
+          <input type="submit" name="submit" class="boton_reservar" value="Reservar Turno">
+        </form>
+      </div>
+      <div class="wrapper_calendario">
+
+      </div>
+    </div>
+    <script type="text/javascript">
+      function displayTurnos() {
+        getElementsByClassName('wrapper_turno'){
+          .style.display='grid';
+        }
+      }
+    </script>
     <section class="medicos_wrapper">
       <h2>Saca tu turno</h2>
       <div class="medicos_wrapper_turnos">
         <div class="turnos_medicos">
-          <div class="foto_medico">
-            Fotos
-          </div>
+          <div class="foto_medico"></div>
           <div class="nombre_medico">
-            <h3>Santiago Flores</h3>
+            <h3>Dicky Del Solar</h3>
                 Neurologo
             <br>
-            <button class="boton_medicos">Saca tu turno</button>
           </div>
+          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
         </div>
         <div class="turnos_medicos">
-          <div class="foto_medico">
-            Fotos
-          </div>
+          <div class="foto_medico"></div>
           <div class="nombre_medico">
-            <h3>Santiago Flores</h3>
-                Neurologo
+            <h3>Dicky Del Solar</h3>
+                Rugbier-Cristiano
             <br>
-            <button class="boton_medicos">Saca tu turno</button>
           </div>
+          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
         </div>
         <div class="turnos_medicos">
-          <div class="foto_medico">
-            Fotos
-          </div>
+          <div class="foto_medico"></div>
           <div class="nombre_medico">
-            <h3>Santiago Flores</h3>
-                Neurologo
+            <h3>Dicky Del Solar</h3>
+                Rugbier-Cristiano
             <br>
-            <button class="boton_medicos">Saca tu turno</button>
           </div>
+          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
         </div>
         <div class="turnos_medicos">
-          <div class="foto_medico">
-            Fotos
-          </div>
+          <div class="foto_medico"></div>
           <div class="nombre_medico">
-            <h3>Santiago Flores</h3>
-                Neurologo
+            <h3>Dicky Del Solar</h3>
+                Rugbier-Cristiano
             <br>
-            <button class="boton_medicos">Saca tu turno</button>
           </div>
+          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
         </div>
         <div class="turnos_medicos">
-          <div class="foto_medico">
-            Fotos
-          </div>
+          <div class="foto_medico"></div>
           <div class="nombre_medico">
             <h3>Santiago Flores</h3>
-                Neurologo
+                Rugbier-Cristiano
             <br>
-            <button class="boton_medicos">Saca tu turno</button>
           </div>
+          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
         </div>
         <div class="turnos_medicos">
-          <div class="foto_medico">
-            Fotos
-          </div>
+          <div class="foto_medico"></div>
           <div class="nombre_medico">
-            <h3>Santiago Flores</h3>
-                Neurologo
+            <h3>Dicky Del Solar</h3>
+                Rugbier-Cristiano
             <br>
-            <button class="boton_medicos">Saca tu turno</button>
           </div>
+          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
         </div>
         <div class="turnos_medicos">
-          <div class="foto_medico">
-            Fotos
-          </div>
+          <div class="foto_medico"></div>
           <div class="nombre_medico">
-            <h3>Santiago Flores</h3>
-                Neurologo
+            <h3>Dicky Del Solar</h3>
+                Rugbier-Cristiano
             <br>
-            <button class="boton_medicos">Saca tu turno</button>
           </div>
+          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
         </div>
         <div class="turnos_medicos">
-          <div class="foto_medico">
-            Fotos
-          </div>
+          <div class="foto_medico"></div>
           <div class="nombre_medico">
-            <h3>Santiago Flores</h3>
-                Neurologo
+            <h3>Dicky Del Solar</h3>
+                Rugbier-Cristiano
             <br>
-            <button class="boton_medicos">Saca tu turno</button>
           </div>
+          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
         </div>
       </div>
     </section>
     <footer>
       <div class="wrapper_footer">
-        <img src="fotos/logo_CAMPS.png" class="items_footer">
-        <div class="numero_footer">
-          <img src="fotos/telefono.png" class="foto_telefono_footer">
-          <h3>0381 494-1303</h3>
-        </div>
-        <div class="items_footer">
-          <img src="fotos/ubicacion.png" class="foto_ubicacion_footer">
-          <h3>Av. Rivadavia 877, Alderetes, Tucumán</h3>
-        </div>
+        <img src="fotos/logo_camps.png" class="logo_footer">
+          <h4>
+            <img src="fotos/telefono.png" class="footer_icon">
+            0381 494-1303
+          </h4>
+          <h4>
+            <img src="fotos/ubicacion.png" class="footer_icon">
+            Av. Rivadavia 877, Alderetes, Tucumán
+          </h4>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
