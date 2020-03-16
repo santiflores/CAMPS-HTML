@@ -39,11 +39,15 @@ nav{
 		}
 
 			nav ul li a{
-				text-decoration: none;
-        color: #fff;
+        color: #FFF;
         font-size: 15px;
 				padding: 0 10px;
+        text-decoration: underline;
+        transition: 0.3s ease;
 			}
+        nav ul li a:hover{
+          color: #FFF;
+        }
 .botones{
   border: 1px solid #fff;
   padding: 15px 10px 15px 10px;
@@ -56,10 +60,12 @@ nav{
 }
 .botones:hover{
   background-color: #D63035;
+  color: #FFF;
+  text-decoration: none;
   transition: 0.3s ease;
 }
-@media only screen and (max-width: 680px){
-  nav{
+@media only screen and (max-width: 780px){
+  .menu nav{
     display: none;
   }
 }
@@ -78,7 +84,7 @@ nav{
 /*
   Container de el titulo y botones
 */
-.container{
+.container_title{
   background: url(fotos/fondo_CAMPS.jpg) no-repeat;
   background-size: 100%;
   background-position: center;
@@ -97,18 +103,17 @@ nav{
   Media para en fondo del container del titulo
 */
 @media only screen and (max-width: 1445px) {
-  .container{
+  .container_title{
     background-size: auto 100%;
   }
+}
   /*
                 LOGO
     RESERVE SU TURNO / CONTACTANOS
   */
-}
 .title{
   width: 350px;
   margin: 30px;
-  margin-bottom: 100px;
   grid-area: x;
   align-self: center;
   display: grid;
@@ -121,17 +126,12 @@ nav{
   margin-right: auto;
   grid-column: 1/3;
 }
-/*
-
-  NUEVO
-
-*/
 .botonestitulo{
   text-align: center;
   width: 100%;
-  font-size: 17px;
-  height: 25px;
-  padding: 15px 10px 15px 10px;
+  font-size: 18px;
+  height: 50px;
+  padding: 10px;
   margin-right: 10px;
   border-radius: 30px;
   color: #fff;
@@ -142,10 +142,15 @@ nav{
 }
 .botonestitulo:hover{
   background-color: #D63035;
+  color: #FFF;
+  text-decoration: none;
   transition: 0.5s ease;
 }
+
+/*  Title medias  */
+
 @media only screen and (max-width: 750px){
-  .container{
+  .container_title{
     display: flex;
     height: 600px;
   }
@@ -153,11 +158,8 @@ nav{
     width: 350px;
     margin: 0 auto 0 auto;
     justify-content: center;
-    align-self: center;
-  }
-  .botonestitulo{
-    width: 100%;
-    padding: 15px 5px 15px 5px;
+    align-self: flex-end;
+    margin-bottom: 50px;
   }
 }
 @media only screen and (max-width: 420px){
@@ -169,6 +171,17 @@ nav{
   .logotitulo{
     width: 100%;
     height: auto;
+  }
+}
+@media only screen and (max-width: 400px){
+  .botonestitulo{
+    height: 55px;
+  }
+  .botonestitulo:nth-child(even){
+    padding: 0 10px 0 10px;
+  }
+  .botonestitulo:nth-child(odd){
+    padding: 12px 10px;
   }
 }
 /*
@@ -193,35 +206,44 @@ nav{
   grid-gap: 100px;
 
 }
-.card{
+.service_card{
   border: 1px solid #F3F3F3;
   border-radius: 5px;
   background: #F3F3F3;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto;
   height: 350px;
   width: 300px;
   display: grid;
   grid-auto-rows: 2fr 1fr;
   transition: 0.5s ease;
 }
-  .card:hover{
+  .service_card:hover{
   background: #fff;
 	box-shadow: 0px 0px 10px #555;
   transition: 0.5s ease;
+  text-decoration: none;
+  color: #3D3D3D;
 }
-  .card img{
+  .service_card img{
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
-  .card a{
+  .service_card a{
+    height: 116px;
     font-size: 15px;
     text-align: center;
     text-decoration: none;
     color: #3D3D3D;
     transition: 0.5s ease;
   }
+    .service_card a:hover{
+    text-decoration: none;
+    color: #3D3D3D;
+    }
+
+/*  Service  medias  */
+
 @media only screen and (max-width:1320px) {
   .card_wrapper_servicios{
     width: 100%;
@@ -231,7 +253,7 @@ nav{
   .card_wrapper_servicios{
     grid-template-columns: 1fr 1fr;
   }
-  .card:nth-child(3){
+  .service_card:nth-child(3){
     grid-column: 1/3;
   }
 }
@@ -239,7 +261,7 @@ nav{
   .card_wrapper_servicios{
     display: block;
   }
-  .card{
+  .service_card{
     width: 100%;
     margin: 40px auto 40px auto;
   }
@@ -256,7 +278,7 @@ nav{
     color: #F0F0F0;
     text-align: center;
     font-size: 50px;
-    margin: 0 0 30px 0;
+    margin-bottom: 30px;
   }
 .contact_wrapper{
   height: 300px;
@@ -268,14 +290,35 @@ nav{
 .map{
   grid-row: 1/3;
 }
-/*
-  NUEVO
-*/
 .contact_info{
   background-color: #E3363B;
   border-radius: 5px;
   color: #FFFFFF;
   padding: 0 25px;
+}
+
+/*  Contact medias  */
+
+@media only screen and (max-width: 750px){
+  .contact_section{
+    height: 850px;
+  }
+  .contact_section iframe{
+    height: 250px;
+  }
+  .contact_wrapper{
+    display: block;
+  }
+  .contact_info{
+    padding: 15px;
+    margin-top: 15px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 445px){
+  .contact_section h2{
+    font-size: 40px;
+  }
 }
 /*
   Footer
@@ -286,49 +329,75 @@ footer{
   background: #E0E0E0
 }
 .wrapper_footer{
-  width: 700px;
-  height: 150px;
+  width: 450px;
   margin-left: auto;
   margin-right: auto;
   font-size: 25px;
   padding-bottom: 10px;
 }
 .logo_footer{
-  height: 125px;
-  padding-bottom: 20px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto;
 }
-.telefono_footer{
-  height: 25px;
+.footer_icon{
+  width: 27px;
 }
-.numero_footer{
-  float: right;
+.wrapper_footer h4{
+  text-align: center;
 }
-.ubicacion_footer{
-  float: left;
-}
-.ubicacion_foto_footer{
-  height: 25px;
-  display: inline;
-}
-@media only screen and (max-width:800px){
-/*  footer{
-    padding: 50px;
-  }*/
+
+/*  Footer medias  */
+
+@media only screen and (max-width: 450px){
   .wrapper_footer{
     width: 100%;
-    height: 90%;
-  }
-  .wrapper_footer div{
-    text-align: center;
-    display: block;
+    padding: 0 21px 0 21px;
   }
 }
-@media only screen and (max-width: 510px) {
-    .logo_footer{
-      width: 100%;
-      height: auto;
-    }
+@media only screen and (max-width: 380px) {
+  .logo_footer{
+    width: 100%;
+  }
+}
+/*
+  PAGINA DE MEDICOS
+*/
+.medicos_wrapper{
+  height: auto;
+}
+.medicos_wrapper h2{
+  text-align: center;
+}
+.medicos_wrapper_turnos{
+  height: auto;
+  margin: auto 20px 10px 20px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.turnos_medicos{
+  border-radius: 10px;
+  border: 1px solid #3D3D3D;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.nombre_medico{
+  text-align: center;
+}
+.foto_medico{
+  height: 100%;
+  object-fit: contain;
+}
+.boton_medicos{
+  margin-top: 20px;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  width:100%;
+  border: none;
+  background-color:#C2393D;
+  color: #FFF;
+  font-size: 15px;
 }

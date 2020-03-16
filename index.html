@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAMPS - Inicio</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image.png" href="fotos/favicon_CAMPS.png">
-  </head>
-  <body>
-  <script src="node_modules/codyhouse-framework/main/assets/js/util.js"></script>
-  <script src="node_modules/codyhouse-framework/main/assets/js/components/_1_stacking-cards.js"></script>
-  <header class="menu">
-    <img src="fotos/logo_camps.png" alt="CAMPS" class="logoheader">
-		<nav>
-			<ul>
-				<li><a href="" class="botones">RESERVE  SU TURNO</a></li>
-				<li><a href="" class="botones">CONTACANOS</a></li>
-			</ul>
-	</header>
-  <div class="container">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAMPS - Inicio</title>
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image.png" href="fotos/favicon_CAMPS.png">
+</head>
+<body>
+<script>
+</script>
+<header class="menu">
+  <img src="fotos/logo_camps.png" alt="CAMPS" class="logoheader">
+  <nav>
+    <ul>
+      <li><a href="#">Quienes somos</a></li>
+      <li><a href="" class="botones">RESERVE SU TURNO</a></li>
+      <li><a href="#contacto" class="botones">CONTACANOS</a></li>
+    </ul>
+  </header>
+  <div class="container_title">
     <div class="title">
-        <a href="index.html" class="logotitulo"><img src="fotos/logo_camps.png" alt="CAMPS" class="logotitulo"></a>
-        <a href="medicos.html" class="botonestitulo">Reserve su turno</a>
-        <a href="#" class="botonestitulo">Contactanos</a>
+      <a href="index.html" class="logotitulo"><img src="fotos/logo_camps.png" alt="CAMPS" class="logotitulo"></a>
+      <a href="medicos.html" class="botonestitulo">Reserve su turno</a>
+      <a href="#contacto" class="botonestitulo">Contactanos</a>
     </div>
   </div>
   <section class="card_servicios">
     <h1>Nuestros servicios</h1>
     <div class="card_wrapper_servicios">
-      <div class="card">
+      <div class="service_card">
         <img src="fotos/odontologia_integral.jpg" alt="">
         <a href="#">
           <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         </a>
       </div>
-      <div class="card">
+      <div class="service_card">
         <img src="fotos/consultorios_medicos.jpg" alt="">
         <a href="#">
           <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         </a>
       </div>
-      <div class="card">
+      <div class="service_card">
         <img src="fotos/medicos.jpg" alt="">
         <a href="#">
           <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         </a>
       </div>
     </div>
   </section>
-  <section class="contact_section">
+  <section class="contact_section " id="contacto">
     <h2>Contactanos</h2>
     <div class="contact_wrapper">
       <div class="map">
@@ -66,16 +71,18 @@
   <footer>
     <div class="wrapper_footer">
       <img src="fotos/logo_camps.png" class="logo_footer">
-      <div class="numero_footer">
-        <img src="fotos/telefono.png" class="telefono_footer">
-        0381 494-1303
-      </div>
-      <div class="ubicacion_footer">
-        <img src="fotos/ubicacion.png" class="ubicacion_foto_footer">
-        Av. Rivadavia 877, Alderetes, Tucumán
-      </div>
+        <h4>
+          <img src="fotos/telefono.png" class="footer_icon">
+          0381 494-1303
+        </h4>
+        <h4>
+          <img src="fotos/ubicacion.png" class="footer_icon">
+          Av. Rivadavia 877, Alderetes, Tucumán
+        </h4>
     </div>
   </footer>
-  <script src="codyhouse-framework-master/main/assets/js/scripts.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 </html>
