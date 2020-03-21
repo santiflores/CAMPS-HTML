@@ -8,15 +8,33 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image.png" href="fotos/favicon_CAMPS.png">
-    <script src="abrir_turno.js"></script>
+    <script src="scripts.js"></script>
   </head>
   <body>
     <script>
     </script>
     <header class="menu">
-      <a href="index.html">
-        <img src="fotos/logo_camps.png" alt="CAMPS" class="logoheader">
+      <a href="index.html" class="logoheader">
+        <img src="fotos/logo_camps.png" alt="CAMPS">
       </a>
+      <button type="button" name="button" class="nav_boton_dropdown" onclick="navDropdown()">
+        <img src="fotos/nav_icon.png" alt="Menu">
+      </button>
+      <div id="navbar_dropdown">
+        <div class="wrapper_drop_first">
+          <button type="button" name="button" class="nav_boton_dropdown" onclick="navDropdownCerrar()">
+            <img src="fotos/nav_icon_cerrar.png" alt="Menu">
+          </button>
+          <a href="index.html" class="logoheader">
+            <img src="fotos/logo_camps.png" alt="CAMPS">
+          </a>
+        </div>
+        <ul>
+          <li><a href="index.html" class="boton_inicio">Inicio</a></li>
+          <li><a href="sobre_nosotros.html" class="boton_quienes_somos">Quienes somos</a></li>
+          <li><a href="sobre_nosotros.html" class="botones">CONTACANOS</a></li>
+        </ul>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html" class="boton_inicio">Inicio</a></li>
