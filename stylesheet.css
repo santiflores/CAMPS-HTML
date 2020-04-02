@@ -2,6 +2,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
+  color: #3D3D3D;
 }
 /*
  * Header General
@@ -162,38 +163,27 @@ nav{
     min-width: 100%;
   }
 }
-/*
-  Container de el titulo y botones
-*/
-.container_title{
-  background: url(fotos/fondo_CAMPS.jpg) no-repeat;
-  background-size: 100%;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows:250px;
-  grid-template-areas:
-  ". . . ."
-  ". . . x";
-	box-shadow: 0px 0px 10px #444;
-}
-/*
-  Media para en fondo del container del titulo
-*/
-@media only screen and (max-width: 1200px) {
-  .container_title{
-    background-size: auto 100%;
-  }
-}
+
   /*
                 LOGO
     RESERVE SU TURNO / CONTACTANOS
   */
+.carousel{
+  height:500px;
+  position: static;
+}
+.carousel-inner{
+  height: 500px;
+}
+.d-block{
+  height: auto;
+  width: 100%;
+}
 .title{
+  position: relative;
+  top: 50px;
+  left: 50px;
   width: 350px;
-  margin-right: 50px;
   grid-area: x;
   align-self: center;
   display: grid;
@@ -217,7 +207,6 @@ nav{
   color: #fff;
   background: #C7262B;
   text-decoration: none;
-  transition-property: initial none;
   transition: 0.5s ease-out;
 }
 .botonestitulo:hover{
@@ -714,7 +703,7 @@ input:hover{
   .about{
     grid-template-columns: 1fr;
     width: 100%;
-
+  }
   .about_info:nth-child(even){
     grid-row: 1/3;
   }
