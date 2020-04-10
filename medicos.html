@@ -33,8 +33,8 @@
           <li><a href="index.html" class="boton_inicio">Inicio</a></li>
           <li><a href="sobre_nosotros.html" class="boton_quienes_somos">Quienes somos</a></li>
           <li><a href="sobre_nosotros.html" class="botones">CONTACANOS</a></li>
-        </ul>
-      </div>
+      </ul>
+    </div>
       <nav>
         <ul>
           <li><a href="index.html" class="boton_inicio">Inicio</a></li>
@@ -43,11 +43,13 @@
         </ul>
       </nav>
     </header>
-    <div class="wrapper_turno_padre">
-      <div class="wrapper_turno" id="wrapper_turno">
+    <div id="wrapper_turno_padre">
+      <div class="wrapper_turno">
         <div class="form_title">
           <h3>Reserve su turno - Dr Dicky Del Solar</h3>
-          <button type="button" onclick="cerrar_turno()" name="button" class="cerrar_turno"></button>
+          <button type="button" onclick="cerrar_turno()" name="button" class="cerrar_turno">
+            <i class="far fa-times"></i>
+          </button>
         </div>
         <div class="wrapper_formulario">
           <form class="" action="<?php echo htmlspecialchars ($_SERVER['PHP_SELF']); ?>" method="post">
@@ -73,80 +75,43 @@
         </div>
       </div>
     </div>
-    <section class="medicos_wrapper">
+  <section class="wrapper_especialidades">
+    <div class="titulo_medicos">
       <h2>Saca tu turno</h2>
-      <div class="medicos_wrapper_turnos">
-        <div class="turnos_medicos">
-          <div class="foto_medico"></div>
+      <form action="medicos.php" method="get" class="buscar">
+        <input type="text" placeholder="Buscar..." name="buscar">
+      </form>
+    </div>
+    <div class="especialidad">
+      <div class="separador">
+        <h2>Rugbiers</h2>
+      </div>
+      <div class="wrapper_medicos">
+
+        <div class="medico">
+          <img src="fotos/user.jpg" class="foto_medico" alt="">
           <div class="nombre_medico">
             <h4>Dicky Del Solar</h4>
-                Neurologo
-            <br>
+            <p>Rugbier - Cristiano</p>
           </div>
           <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
         </div>
-        <div class="turnos_medicos">
-          <div class="foto_medico"></div>
-          <div class="nombre_medico">
-            <h4>Dicky Del Solar</h4>
-                Rugbier-Cristiano
-            <br>
+          <div class="medico">
+            <img src="fotos/user.jpg" class="foto_medico" alt="">
+            <div class="nombre_medico">
+              <h4>Dicky Del Solar</h4>
+                  Rugbier-Cristiano
+            </div>
+            <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
           </div>
-          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
-        </div>
-        <div class="turnos_medicos">
-          <div class="foto_medico"></div>
-          <div class="nombre_medico">
-            <h3>Dicky Del Solar</h3>
-                Rugbier-Cristiano
-            <br>
+          <div class="medico">
+            <img src="fotos/user.jpg" class="foto_medico" alt="">
+            <div class="nombre_medico">
+              <h3>Dicky Del Solar</h3>
+                  Rugbier-Cristiano
+            </div>
+            <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
           </div>
-          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
-        </div>
-        <div class="turnos_medicos">
-          <div class="foto_medico"></div>
-          <div class="nombre_medico">
-            <h4>Dicky Del Solar</h4>
-                Rugbier-Cristiano
-            <br>
-          </div>
-          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
-        </div>
-        <div class="turnos_medicos">
-          <div class="foto_medico"></div>
-          <div class="nombre_medico">
-            <h4>Santiago Flores</h4>
-                Rugbier-Cristiano
-            <br>
-          </div>
-          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
-        </div>
-        <div class="turnos_medicos">
-          <div class="foto_medico"></div>
-          <div class="nombre_medico">
-            <h4>Dicky Del Solar</h4>
-                Rugbier-Cristiano
-            <br>
-          </div>
-          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
-        </div>
-        <div class="turnos_medicos">
-          <div class="foto_medico"></div>
-          <div class="nombre_medico">
-            <h4>Dicky Del Solar</h4>
-                Rugbier-Cristiano
-            <br>
-          </div>
-          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
-        </div>
-        <div class="turnos_medicos">
-          <div class="foto_medico"></div>
-          <div class="nombre_medico">
-            <h4>Dicky Del Solar</h4>
-                Rugbier-Cristiano
-            <br>
-          </div>
-          <button class="boton_medicos" onclick="displayTurnos()">Saca tu turno</button>
         </div>
       </div>
     </section>

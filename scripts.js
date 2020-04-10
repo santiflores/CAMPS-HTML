@@ -1,9 +1,8 @@
 function displayTurnos() {
-	document.getElementById('wrapper_turno').style.display='grid';
-	document.getElementById('wrapper_turno').style.filter='alpha:(opacity=50%)';
+	document.getElementById('wrapper_turno_padre').style.display='grid';
 }
 function cerrar_turno(){
-	document.getElementById('wrapper_turno').style.display='none'
+	document.getElementById('wrapper_turno_padre').style.display='none'
 }
 function navDropdown() {
 	document.getElementById('navbar_dropdown').style.display='block'
