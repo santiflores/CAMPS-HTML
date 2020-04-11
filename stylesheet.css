@@ -1,9 +1,11 @@
 body{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #3D3D3D;
-  }
+  font-family: 'Anton', sans-serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Permanent Marker', cursive;
+  margin: 0;
+  padding: 0;
+  color: #3D3D3D;
+ }
   /*
    * Header General
   */
@@ -476,12 +478,13 @@ body{
 }
 .separador{
 	background-color: #EEE;
-    color: #3D3D3D;
-    width: 100%;
-    padding: 20px;;
+  color: #3D3D3D;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 0 5px #BABABA;
 }
 .wrapper_medicos{
-	width: 1200px;
+  width: 1200px;
 	padding: 25px;
 	margin: auto;
 	display: grid;
@@ -490,21 +493,28 @@ body{
 }
   .medico{
     border-radius: 10px;
-    border: 1px solid #3D3D3D;
-    height: 150px;
     display: grid;
-    grid-template-columns: 110px 2fr;
-    grid-template-rows: 110px 40px;
+    grid-template-columns: 160px 1fr;
+    grid-template-rows: 160px 40px;
+    box-shadow: 0 0 5px #BBB;
   }
-  .nombre_medico{
+  .info_medico{
     text-align: center;
-    margin: 20px 10px 10px;
+    padding: 20px 10px 10px;
+    overflow: hidden;
+  }
+  .info_medico p{
+    width: 100%;
+  }
+  .info_medico p:nth-child(odd){
+    font-weight: lighter;
   }
   .foto_medico{
     background: url(fotos/user.jpg)center no-repeat;
     background-size: 100%;
     height: 100%;
     border-top-left-radius: 10px;
+    object-fit: cover;
   }
   .boton_medicos{
     grid-column: 1/3;
@@ -520,6 +530,7 @@ body{
     background-color:#C2393D;
     color: #FFF;
     font-size: 15px;
+    box-shadow: 0 0px 5px 0 #BBB, 0 0px 5px 0 #BBB;
     transition: 0.5s;
   }
   .boton_medicos:hover{
@@ -552,21 +563,51 @@ body{
       grid-template-rows: 160px 40px;
       font-size: 15px;
     }
-    .nombre_medico{
-      width: 100%;
-    }
     .wrapper_especialidades{
       padding: 0px;
     }
   }
-  @media only screen and (max-width: 450px){
+  @media only screen and (max-width: 500px){
     .medico{
-      height: 200px;
-      grid-template-columns: 1fr 2fr;
-      grid-template-rows: 160px 40px;
+      height: 180px;
       font-size: 15px;
+      width: 100%;
+      grid-template-rows: 140px 40px;
     }
   }
+  @media only screen and (max-width: 450px){
+    .info_medico{
+      padding: 10px;
+    }
+    .info_medico h4{
+      font-size: 20px;
+      margin: 0;
+    }
+    .info_medico p:nth-child(even){
+      display: none;
+    }
+    .info_medico p {
+      display: block;
+      margin: 20px auto;
+    }
+    .medico{
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+    @media only screen and (max-width: 400px){
+      .foto_medico{
+        height: auto;
+        width: 100%;
+        margin: auto;
+        object-fit: cover;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+      .info_medico p {
+        display: block;
+        margin: 5px auto;
+      }
+    }
   /*
     Sacar Turno
   */
@@ -607,20 +648,19 @@ body{
   .cerrar_turno{
     background: #EEE;
     border: 1px solid #EEE;
+    color: #999;
     border-radius: 25px;
     height: 50px;
     width: 50px;
     margin: 5px;
+    padding: 8px 13px;
     float: right;
-    transition: 0.4s ease;
+    transition: 0.5s ease;
   }
   .cerrar_turno:hover{
     background: #FFF;
-    transition: 0.4s ease;
-  }
-  .cerrar_turno i{
-	  color: #fff;
-	  height: 20px;;
+    color: #777;
+    transition: 0.5s ease;
   }
   .wrapper_formulario{
     background: #FFF;
